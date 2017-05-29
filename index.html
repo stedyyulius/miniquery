@@ -45,7 +45,10 @@
     function demoSweetSelector() {
       console.log(`SweetSelector.select('#eyed')`)
       console.log(SweetSelector.select('#eyed'))
-
+      console.log(`SweetSelector.select('#eyed')`)
+      console.log(SweetSelector.select('#eyed'))
+      console.log(`SweetSelector.select('#eyed')`)
+      console.log(SweetSelector.select('#eyed'))
       console.log(`SweetSelector.select('.klass')`)
       console.log(SweetSelector.select('.klass'))
 
@@ -64,6 +67,7 @@
       EventDispatcher.on('.klass', 'click', function() {
         console.log("Awesome")
       })
+      EventDispatcher.trigger('.klass','click')
     }
 
     function demoAjax() {
